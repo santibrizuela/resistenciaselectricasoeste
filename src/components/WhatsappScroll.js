@@ -28,16 +28,16 @@ const WhatsappScroll = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.7}}
-      className={`fixed bottom-28 md:bottom-4 right-4 rounded-xl z-50 transition-all duration-500 text-[2rem] md:text-[4rem]  
+      className={`fixed bottom-4 md:bottom-4 right-4 rounded-xl z-50 transition-all duration-500 text-[3rem] md:text-[4rem]  
       
       ${
         scrolled
-          ? 'block bg-green-500'
+          ? 'block bg-green-500 hover:bg-green-400'
           : 'hidden'
       }`}
     >
       <a
-        href="https://wa.link/k6wmgp"
+        href="https://www.wa.link/xtdsov"
         target="_blank"
         rel="noopener noreferrer"
     >

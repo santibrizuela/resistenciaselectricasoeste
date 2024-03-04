@@ -1,45 +1,47 @@
 import React from 'react'
 // image
-import topImage from '../assets/campinis.png';
+import topImage from '../assets/rugbyHeader3.jpg';
+import rugbySuperior from '../assets/rugbySuperior.png'
+import rugbyJuvenil from '../assets/rugbyJuvenil.png'
+import rugbyInfantil from '../assets/hockeyInfantil.png'
 // motion
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
-
-// img
-import termostatos from '../assets/termostatos.png';
-import termocuplas from '../assets/termocuplas.png';
-import campinis from '../assets/campinis.png';
-
-
-// rugby data
-const productos = [
+// actividades data
+const actividades = [
   
+    
     {
-      name: 'TT Mecánico',
+      name: 'Rugby',
       description:
-      '40° / 90° / 120° / 220° / 300°.',
-      cardimage: termostatos,
-    },{
-      name: 'Termocuplas',
+       'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
+      link: '/rugby',
+      cardimage: rugbyJuvenil,
+    },
+    {
+      name: 'Hockey',
       description:
-      'J / K / PT100 / Compactadas.',
-      cardimage: termocuplas,
-    },{
-        name: 'Campinis',
-        description:
-        'Bebedero / Horno.',
-        cardimage: campinis,
-      }
+       'Martes y Jueves: 20:30hs-22:30hs / Sabados 10hs-12hs',
+      link: '/hockey',
+      cardimage: rugbyInfantil,
+    },
+    {
+      name: 'Transporte',
+      description:
+       'Martes y Jueves: 20:30hs-22:30hs',
+      link: '/transporte',
+      cardimage: rugbySuperior,
+    }
+    
+  ]
 
-]
-
-const Sensores = () => {
+const Actividades = () => {
   return (
     <>
 
 
-        <div className='w-full pb-36'>
+        <div className='w-full h-full text-center'>
             <motion.div 
                 
                 variants={fadeIn('down', 0.2)}
@@ -50,16 +52,17 @@ const Sensores = () => {
             >
                 <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
                 <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
-                <div className='absolute top-[18%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>SENSORES DE TEMPERATURA</h2>
+                <div className='absolute top-[14%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2 text-left'>
+                    <h2 className='py-2 font-bold text-gradient text-[2.6rem] uppercase w-min'>Actividades</h2>
                     
                 </div>
             </motion.div>
 
+            
             <div className='grid md:grid-cols-2 lg:grid-cols-3'>
-                {productos.map((service, index) => {
+                {actividades.map((service, index) => {
                 // destructure service
-                const { name, description, cardimage } = service;
+                const { name, description, link, cardimage } = service;
                 return (
                 <motion.div
                     variants={fadeIn('up', 0.2)}
@@ -84,19 +87,19 @@ const Sensores = () => {
                             />
                             {/* title */}
                             <div className='absolute bottom-full left-12 
-                            group-hover:bottom-16 lg:group-hover:bottom-16 transition-all duration-700 z-40'>
+                            group-hover:bottom-16 lg:group-hover:bottom-16 transition-all duration-700 z-50'>
                             <span className='text-3xl font-bold text-gradient'>{name}</span>
                             </div>
                             {/* pretitle */}
                             <div className='absolute bottom-full left-12 
-                            group-hover:bottom-24 transition-all duration-500 z-40'>
+                            group-hover:bottom-24 transition-all duration-500 z-50'>
                             <span className='text-white'>{description}</span>             
                             </div>
                             {/* button */}
                             <div className='absolute bottom-full left-12 
-                            group-hover:bottom-2 transition-all duration-700 z-40'>
-                                <a href='https://www.wa.link/k6wmgp' target='_blank' rel="noreferrer">
-                                    <button className='btn btn-sm'>Contactanos</button>
+                            group-hover:bottom-2 transition-all duration-700 z-50'>
+                                <a href={link}>
+                                    <button className='btn btn-sm'>{name}</button>
                                 </a>
                             </div>
                         </div>
@@ -104,11 +107,9 @@ const Sensores = () => {
                 );
                 })}
             </div>
-
-            
-        </div>
+          </div>
     </>
   )
 }
 
-export default Sensores
+export default Actividades

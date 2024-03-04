@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 const Banner = () => {
   return (
-  <section 
+    <section 
     className='min-h-[85vh] lg:min-h-[78vh] flex items-center' 
     id='home'
   >
@@ -24,7 +24,7 @@ const Banner = () => {
             viewport={{once: false, amount: 0.7}} 
             className='text-[40px] font-bold text-red-500 leading-[0.8] md:text-[55px] w-min mx-auto mb-2 lg:m-0'
             >
-            <a href='/' className='font-bold align-middle'>MADERO<br/> <span>RESISTENCIAS</span></a>
+            <a href='/' className='font-bold align-middle'>RESISTENCIAS<br/> <span>ELECTRICAS</span><br/> <span>OESTE</span></a>
           </motion.h1>
           <motion.div 
              variants={fadeIn('up', 0.4)} 
@@ -59,7 +59,7 @@ const Banner = () => {
              className='mb-8 max-w-lg mx-auto lg:mx-0'
           >
             Asesoramos y Desarrollamos sistemas de calefacción. <br /> 
-            Venta de <a href='/resistencias' className='font-bold text-red-500'>Resistencias</a>, <a href='/sensores' className='font-bold text-red-500'>Sensores</a> y <a href='/controladores' className='font-bold text-red-500'>Controladores</a>.
+            Venta de <a href='/resistencias' className='font-bold text-red-500'>Resistencias</a>, <a href='/sensores' className='font-bold text-red-500'>Sensores</a>, <a href='/sensores' className='font-bold text-red-500'>Sensores</a> y <a href='/controladores' className='font-bold text-red-500'>Controladores</a>.
           </motion.p>
           <motion.div 
              variants={fadeIn('up', 0.6)} 

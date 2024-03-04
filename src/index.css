@@ -2,24 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+
 .btn {
   background: linear-gradient(
     92.23deg,
-    #FFC300 21.43%,
-    #FF5733 50.63%,
-    #C70039 100%,
-    #900C3F 117.04%
+    #d9f99d 21.43%,
+    #10B981 50.63%,
+    #047857 100%,
+    #bef264 117.04%
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(222, 153, 74, 0.51);
+  box-shadow: 0px 4.42184px 107.23px rgba(74, 222, 128, 0.51);
 }
 
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    #900C3F 21.43%,
-    #C70039 50.63%,
-    #FFC300 100%,
-    #FF5733 117.04%
+    #10B981 21.43%,
+    #047857 50.63%,
+    #bef264 100%,
+    #d9f99d 117.04%
   );
 }
 
@@ -27,10 +38,10 @@
 .active {
   background: linear-gradient(
     92.23deg,
-    #FFC300 21.43%,
-    #FF5733 50.63%,
-    #C70039 100%,
-    #900C3F 117.04%
+    #d9f99d 21.43%,
+    #10B981 50.63%,
+    #047857 100%,
+    #bef264 117.04%
   );
 }
 
@@ -38,6 +49,12 @@
   color: #fff;
   padding: 1rem;
   border-radius: 100%;
+}
+
+.mask{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./assets/headerImg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 @layer base {
@@ -63,15 +80,28 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#900C3F] to-[#FFC300] font-bold font-primary hover:from-[#FFC300] hover:to-[#900C3F];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#10B981] to-[#bef264] font-bold font-primary hover:from-[#bef264] hover:to-[#10B981];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .icon-color{
-    @apply text-red-700 hover:text-orange-400;
+    @apply text-green-700 hover:text-lime-400;
   }
-  .text-red-500{
+  .text-lime-200{
     @apply hover:text-gradient
   }
+  .menuNav{
+    @apply  text-green-700 hover:text-lime-200
+  }
+  .menuNavbar{
+    @apply  hover:text-lime-200
+  }
+  .icolink{
+    @apply hover:bg-gradient-to-r from-[#10B981] to-[#bef264] hover:text-white
+  }
 }
+
+
+
+

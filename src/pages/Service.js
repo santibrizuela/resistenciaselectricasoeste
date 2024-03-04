@@ -63,7 +63,7 @@ const Controladores = () => {
                 <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
                 <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
                 <div className='absolute top-[18%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>CONTROLADORES DE TEMPERATURA</h2>
+                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>SERVICIO TECNICO</h2>
                     
                 </div>
             </motion.div>
