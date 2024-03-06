@@ -1,68 +1,80 @@
-import React from 'react'
-// image
-import topImage from '../assets/rugbyHeader3.jpg';
-import rugbySuperior from '../assets/rugbySuperior.png'
-import rugbyJuvenil from '../assets/rugbyJuvenil.png'
-import rugbyInfantil from '../assets/hockeyInfantil.png'
+import React from 'react';
 // motion
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
-// actividades data
-const actividades = [
+// img
+import pirometros from '../assets/pirometros.png';
+import blindadas from '../assets/blindadas.png';
+import campinis from '../assets/campinis.png';
+import service from '../assets/service.jpg';
+import accesorios from '../assets/accesorios.jpg';
+// services data
+const catalogos = [
   
-    
-    {
-      name: 'Rugby',
-      description:
-       'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
-      link: '/rugby',
-      cardimage: rugbyJuvenil,
-    },
-    {
-      name: 'Hockey',
-      description:
-       'Martes y Jueves: 20:30hs-22:30hs / Sabados 10hs-12hs',
-      link: '/hockey',
-      cardimage: rugbyInfantil,
-    },
-    {
-      name: 'Transporte',
-      description:
-       'Martes y Jueves: 20:30hs-22:30hs',
-      link: '/transporte',
-      cardimage: rugbySuperior,
-    }
-    
-  ]
+  
+  {
+    name: 'Resistencias',
+    description:
+    'Bremen.',
+    cardimage: blindadas,
+    link: '/resistencias',
+  },{
+    name: 'Controladores',
+    description:
+    'Bremen.',
+    cardimage: pirometros,
+    link: '/controladores',
+  },
+  {
+    name: 'Sensores',
+    description:
+     'Rimo.',
+    cardimage: campinis,
+    link: '/sensores',
+  },
+  {
+    name: 'Accesorios',
+    description:
+     'Bosch',
+    cardimage: accesorios,
+    link: '/accesorios',
+  },
+  {
+    name: 'Servicio Técnico',
+    description:
+     'Bosch',
+    cardimage: service,
+    link: '/service',
+  }
+  
+]
 
-const Actividades = () => {
+const Work = () => {
   return (
-    <>
-
-
-        <div className='w-full h-full text-center'>
-            <motion.div 
-                
-                variants={fadeIn('down', 0.2)}
-                initial='hidden'
-                whileInView={'show'}
-                viewport={{ once: false, amount: 0.3 }}
-                className='w-screen h-[30vh] lg:h-[40vh] top-0'
-            >
-                <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
-                <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
-                <div className='absolute top-[14%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2 text-left'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem] uppercase w-min'>Actividades</h2>
-                    
-                </div>
-            </motion.div>
-
+  <section className='section' id='work'>
+    <div className='container mx-auto'>
+      <div className='grid lg:flex-row gap-x-10'>
+        <motion.div 
+          variants={fadeIn('right', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}
+          className='gap-10 mb-10 lg:mb-0 text-center mx-auto lg:text-start'>
+          {/* text */}
+          <div>
             
-            <div className='grid md:grid-cols-2 lg:grid-cols-3'>
-                {actividades.map((service, index) => {
+            <h2 className='h2 leading-tight font-bold text-lime-200 text-center'>
+              <a href='/catalogo' className='text-gradient text-lime-200 w-min'>
+                  Catálogo
+              </a>
+            </h2>
+          </div>
+        </motion.div>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3'>
+                {catalogos.map((service, index) => {
                 // destructure service
-                const { name, description, link, cardimage } = service;
+                const { name, description, cardimage, link } = service;
                 return (
                 <motion.div
                     variants={fadeIn('up', 0.2)}
@@ -99,7 +111,7 @@ const Actividades = () => {
                             <div className='absolute bottom-full left-12 
                             group-hover:bottom-2 transition-all duration-700 z-50'>
                                 <a href={link}>
-                                    <button className='btn btn-sm'>{name}</button>
+                                    <button className='btn btn-sm'>Ver Más</button>
                                 </a>
                             </div>
                         </div>
@@ -107,9 +119,11 @@ const Actividades = () => {
                 );
                 })}
             </div>
-          </div>
-    </>
-  )
-}
+      </div>
 
-export default Actividades
+    </div>
+  </section>
+  );
+};
+
+export default Work;

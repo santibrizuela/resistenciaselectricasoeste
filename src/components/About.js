@@ -24,7 +24,7 @@ const About = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 bg-about bg-contain bg-no-repeat 
-              h-[640px] bg-top'
+              h-[640px] bg-center'
             >
           </motion.div>
           {/* text */}
@@ -36,22 +36,23 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 text-center lg:text-start'
           >
-            <h2 className='h2 text-lime-200 w-max mx-auto'>About us.</h2>
-            <h3 className='h3 mb-4'>
-              Nos dedicamos al <a href='/branding' className='text-gradient text-lime-200'>Diseño Gráfico</a>,
-              <a href='/webdevelopment' className='text-gradient text-lime-200'> Desarrollo Web</a> y 
-              <a href='/marketing' className='text-gradient text-lime-200'> Marketing</a> de Marcas.
+            <h3 className='h3 mb-4 text-lime-200 text-4xl'>
+            <a href='/' className='font-bold'>Resistencias Eléctricas Oeste</a>
             </h3>
             <p className='mb-6'>
-              Insertamos, potenciamos y lanzamos marcas en línea.
-              Creamos soluciones impactantes y auténticas que conectan con tu audiencia y generan resultados excepcionales.
+              Te asesoramos técnicamente para el desarrollo o reparación de máquinas y sistemas de calefacción.<br />
+              Proveemos <a href='/resistencias' className='font-bold text-lime-200'>Resistencias</a>
+              , <a href='/sensores' className='font-bold text-lime-200'>Sensores</a>
+              , <a href='/controladores' className='font-bold text-lime-200'>Controladores</a> y
+              <a href='/accesorios' className='font-bold text-lime-200'> Accesorios</a>.<br />
+              Brindamos <a href='/service' className='font-bold text-lime-200'>Servicio Técnico</a>.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12 justify-center lg:justify-start'>
-              <div>
+            <div>
                 <div className='text-[40px] font-tertiary text-gradient
                 mb-2'>
-                  {inView ? <CountUp start={0} end={3} duration={3} /> : 
+                  {inView ? <CountUp start={0} end={4} duration={3} /> : 
                   null}
                   +
                 </div>
@@ -63,19 +64,19 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient
                 mb-2'>
-                  {inView ? <CountUp start={0} end={20} duration={3} /> : 
+                  {inView ? <CountUp start={0} end={50} duration={3} /> : 
                   null}
                   +
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Proyectos <br />
-                  Completados
+                  Productos y <br />
+                  Accesorios
                 </div>
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient
                 mb-2'>
-                  {inView ? <CountUp start={0} end={10} duration={3} /> : 
+                  {inView ? <CountUp start={0} end={500} duration={3} /> : 
                   null}
                   +
                 </div>
@@ -91,8 +92,8 @@ const About = () => {
                       Contactanos
                   </button>              
               </a>
-              <a href='/portfolio' className='text-lime-200 font-bold btn-link'>
-                Ver Portfolio
+              <a href='/catalogo' className='text-lime-200 font-bold btn-link'>
+                Ver Catálogo
               </a>
             </div>
           </motion.div>

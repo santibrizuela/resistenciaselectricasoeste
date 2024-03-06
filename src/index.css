@@ -83,7 +83,7 @@ body {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#10B981] to-[#bef264] font-bold font-primary hover:from-[#bef264] hover:to-[#10B981];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply my-8 lg:my-24 lg:h-screen flex items-center;
   }
   .icon-color{
     @apply text-green-700 hover:text-lime-400;

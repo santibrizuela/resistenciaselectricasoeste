@@ -3,7 +3,7 @@ import React from 'react'
 import About from '../components/About';
 import Services from '../components/Services';
 import Banner from '../components/Banner';
-import Work from '../components/Work';
+import Work from '../components/Catalogo';
 
 const Home = () => {
   return (

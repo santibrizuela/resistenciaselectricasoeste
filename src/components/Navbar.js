@@ -31,22 +31,13 @@ const Navbar = () => {
               <img 
               className=''
               src={brandLogo} 
-              alt='Brizuela Sideravicius' 
+              alt='Resistencias Eléctricas Oeste' 
               width={100} 
               height={60}
               />
             </a>            
 
             
-            <a 
-                href='#contact'
-                className='uppercase'
-            >
-                <button className='btn btn-lg btn-outline flex items-center'>
-                  Contactanos 
-                </button>
-            
-            </a>
             
             {/* Menú Estático */}
             <div className=''>
@@ -56,8 +47,8 @@ const Navbar = () => {
                 <a href='/'>
                   <li className='ml-10 text-sm uppercase menuNavbar'>Inicio</li>
                 </a>
-                <a href='/portfolio'>
-                  <li className='ml-10 text-sm uppercase menuNavbar'>Portfolio</li>
+                <a href='/catalogo'>
+                  <li className='ml-10 text-sm uppercase menuNavbar'>Catálogo</li>
                 </a>
                 <a href='/about'>
                   <li className='ml-10 text-sm uppercase menuNavbar'>Nosotros</li>
@@ -91,14 +82,14 @@ const Navbar = () => {
                   src={brandLogo} 
                   width='87' 
                   height='35' 
-                  alt='Brizuela Sideravicius'/>
+                  alt='Resistencias Eléctricas Oeste'/>
                 </a>
                 <div onClick={()=> setNav(false)} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                   <AiOutlineClose/>
                 </div>
               </div>
               <div className='border-b border-gray-300 my-4'>
-                <h3 className='w-[85%] md:w-[90%] py-4'>Brizuela Sideravicius</h3>
+                <h3 className='w-[85%] md:w-[90%] py-4'>Resistencias Eléctricas Oeste</h3>
               </div>
             </div>
             <div className='py-4 flex flex-col'>
@@ -106,8 +97,8 @@ const Navbar = () => {
                 <a href='/'>
                 <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Inicio</li>
                 </a>
-                <a href='/portfolio'>
-                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Portfolio</li>
+                <a href='/catalogo'>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Catálogo</li>
                 </a>
                 <a href='/about'>
                 <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Nosotros</li>

@@ -3,17 +3,17 @@ import React from 'react';
 import WhatsappScroll from './components/WhatsappScroll';
 import About from './components/About';
 import Services from './components/Services';
-import Work from './components/Work';
+import Catalogo from './components/Catalogo';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
-import Portfolio from './pages/Portfolio';
-import Webdevelopment from './pages/Webdevelopment';
-import Marketing from './pages/Marketing';
-import Branding from './pages/Branding';
 import Service from './pages/Service';
+import Accesorios from './pages/Accesorios';
+import Resistencias from './pages/Resistencias';
+import Sensores from './pages/Sensores';
+import Controladores from './pages/Controladores';
 
 const App = () => {
   return (
@@ -25,12 +25,12 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/services' element={<Services/>} />
-        <Route path='/work' element={<Work/>} />
-        <Route path='/branding' element={<Branding/>} />
-        <Route path='/marketing' element={<Marketing/>} />
-        <Route path='/webdevelopment' element={<Webdevelopment/>} />
-        <Route path='/portfolio' element={<Portfolio/>} />
+        <Route path='/catalogo' element={<Catalogo/>} />
         <Route path='/service' element={<Service/>} />
+        <Route path='/accesorios' element={<Accesorios/>} />
+        <Route path='/resistencias' element={<Resistencias/>} />
+        <Route path='/Sensores' element={<Sensores/>} />
+        <Route path='/Controladores' element={<Controladores/>} />
       </Routes>
       <Contact />
       <Footer />

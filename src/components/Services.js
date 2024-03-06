@@ -1,6 +1,4 @@
 import React from 'react';
-// icons
-import { BsArrowUpRight } from 'react-icons/bs'
 // motion
 import { motion } from 'framer-motion';
 // variants
@@ -11,31 +9,43 @@ const services = [
   
   
   {
-    name: 'Desarrollo de Marca',
+    name: 'Resistencias',
     description:
-     'Diseño Gráfico, Paleta de Colores, Logotipo, Imagotipo. Diseñamos el logo y la estética de tu marca desde cero. Es el punto de partida para digitalizar una marca.',
-    link: '/branding',
+     'Blindadas, Aletadas, Planas, Sunchos de Chapa, Sunchos Cerámicos, Cartuchos, Cabezales, Microblindadas, Discos Cerámicos, Pantallas Cerámicas.',
+    link: '/resistencias',
   },
   {
-    name: 'Desarrollo Web',
+    name: 'Sensores',
     description:
-     'Diseño Web, UX/UI, Dominios, Correo Empresarial. Te diseñamos un sitio web con información de tu marca (Contacto, Locales, Horarios) y lo ponemos en línea con Vercel o DNS.',
-    link: '/webdevelopment',
+     'Termocupla J / K / PT-100 / PT-1000 / Compactadas, Campinis, Termostato Mecánico, Termostato de Plancha, Termostato de Termotanque.',
+    link: '/sensores',
   },
   {
-    name: 'Marketing Digital',
+    name: 'Controladores',
     description:
-     'Social Media, Campaña de Seguidores, Plantillas (Feed-Historias), Link/QR. Creamos/Desarrollamos perfiles en redes sociales en las que la Marca tenga un potencial impacto.',
-    link: '/marketing',
+     'Pirómetros 48x48 / 72x72 / 96x96, Relay 25A / 40A / 60A / 80A, Contactor, Relay con Potenciómetro, Timer Analógico / Digital, Semiswitch.',
+    link: '/controladores',
+  },
+  {
+    name: 'Accesorios',
+    description:
+     'Cables, Espagueti, Borneras, Teflón con y sin Adhesivo, Llaves de Anafe, Fichas Unipolares / Bipolares Cerámicas / Silicona, Bujes, Cabezales DIN.',
+    link: '/accesorios',
+  },
+  {
+    name: 'Servicio Técnico',
+    description:
+     'Diagnosticamos las fallas de tus máquinas o electrodomésticos y presupuestamos la reparación de los mismos.',
+    link: '/service',
   }
   
 ]
 
 const Services = () => {
   return (
-  <section className='section' id='services'>
+  <section className='' id='services'>
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row'>
+      <div className='flex flex-col'>
         {/* text & image */}
         <motion.div 
           variants={fadeIn('right', 0.3)}
@@ -43,16 +53,18 @@ const Services = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1 lg:bg-services lg-bg-bottom bg-no-repeat 
-          mix-blend-lighten mb-12 lg:mb-0  text-center lg:text-start'
+          mix-blend-lighten mb-12 lg:mb-0  text-center'
         >
-          <h2 className='h2 font-bold text-lime-100 my-4'>¿Cómo <br/>Digitalizamos <br/>tu Marca?</h2>
-          <h3 className='h3 lg:max-w-[455px] lg:mb-48'>
-            Diseñamos un <a href='/branding' className='text-gradient text-lime-200'>Logo</a> acorde 
-            a tu marca, creamos una <a href='/webdevelopment' className='text-gradient text-lime-200'>Web</a> y 
-            aplicamos estrategias de <a href='/marketing' className='text-gradient text-lime-200'>Marketing</a> en las redes.
+          <h2 className='h2 font-bold text-lime-100 my-4'>¿Necesitas <br/>Asesoramiento <br/>Técnico?</h2>
+          <h3 className='h3'>
+            Desarrollamos <a href='/resistencias' className='text-gradient text-lime-200'>Resistencias</a> acorde 
+            a las necesidades técnicas, diseñamos sistemas con <a href='/controladores' className='text-gradient text-lime-200'>Controladores </a>
+            y <a href='/sensores' className='text-gradient text-lime-200'>Sensores</a> para manejar la temperatura de trabajo de tus resistencias 
+            con los <a href='/accesorios' className='text-gradient text-lime-200'>Accesorios</a> necesarios. Tenemos <a href='/service' className='text-gradient text-lime-200'>Servicio Técnico </a>
+            para garantizar la correcta instalación de los productos.
           </h3>
-          <a href='/work'>
-            <button className='btn btn-sm'>Ver Últimos Trabajos</button>
+          <a href='/catalogo'>
+            <button className='btn btn-sm'>Ver Catálogo</button>
           </a>
           
         </motion.div>
@@ -62,17 +74,17 @@ const Services = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1'
+          className='mt-5'
         >
           {/* service list */}
-          <div>
+          <div className='grid md:grid-cols-2'>
             {services.map((service, index) => {
               // destructure service
               const { name, description, link } = service;
               return (
                 <div 
-                  className='border-b border-white/20 h-[146px] 
-                  mb-[38px] flex' 
+                  className='border-b border-white/20 
+                  mb-[38px] mx-2 flex' 
                   key={index}
                 >
                   <div className='max-w-[476px]'>
@@ -86,18 +98,16 @@ const Services = () => {
                     <p className='font-secondary leading-tight'>
                       {description}
                     </p>
+                    <div className=''>
+                      <a 
+                        href={link} 
+                        className='btn btn-sm justify-center items-center'
+                      >
+                        Ver Más
+                      </a>
+                    </div>
                   </div>
-                  <div className='flex flex-col flex-1 items-end'>
-                    <a 
-                      href={link} 
-                      className='btn w-9 h-9 mb-4 md:mb-[42px] flex justify-center items-center'
-                    >
-                      <BsArrowUpRight />
-                    </a>
-                    <a href={link} className='text-lime-200 font-bold text-sm'>
-                      Ver Más
-                    </a>
-                  </div>
+                  
                 </div>
               );
             })}

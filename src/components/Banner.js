@@ -14,7 +14,7 @@ const Banner = () => {
     id='home'
   >
     <div className='container mx-auto h-full'>
-      <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
+      <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 mt-20'>
         {/* text */}
         <div className='flex-1 text-center font-secondary lg:text-left'>
           <motion.h1 
@@ -22,7 +22,7 @@ const Banner = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[40px] font-bold text-red-500 leading-[0.8] md:text-[55px] w-min mx-auto mb-2 lg:m-0'
+            className='text-[40px] font-bold text-lime-200 leading-[0.8] md:text-[55px] w-min mx-auto mb-2 lg:m-0'
             >
             <a href='/' className='font-bold align-middle'>RESISTENCIAS<br/> <span>ELECTRICAS</span><br/> <span>OESTE</span></a>
           </motion.h1>
@@ -59,7 +59,11 @@ const Banner = () => {
              className='mb-8 max-w-lg mx-auto lg:mx-0'
           >
             Asesoramos y Desarrollamos sistemas de calefacción. <br /> 
-            Venta de <a href='/resistencias' className='font-bold text-red-500'>Resistencias</a>, <a href='/sensores' className='font-bold text-red-500'>Sensores</a>, <a href='/sensores' className='font-bold text-red-500'>Sensores</a> y <a href='/controladores' className='font-bold text-red-500'>Controladores</a>.
+            Proveemos <a href='/resistencias' className='font-bold text-lime-200'>Resistencias</a>
+            , <a href='/sensores' className='font-bold text-lime-200'>Sensores</a>
+            , <a href='/controladores' className='font-bold text-lime-200'>Controladores</a> y
+            <a href='/accesorios' className='font-bold text-lime-200'> Accesorios</a>.<br />
+            Consultar por <a href='/service' className='font-bold text-lime-200'>Servicio Técnico</a>.
           </motion.p>
           <motion.div 
              variants={fadeIn('up', 0.6)} 
@@ -78,8 +82,8 @@ const Banner = () => {
               </button>
             </a>
             
-            <a href='/work' className='text-gradient text-red-500 btn-link'>
-              Ver Productos
+            <a href='/catalogo' className='text-gradient text-lime-200 btn-link'>
+              Ver Catálogo
             </a>
           </motion.div>
           
