@@ -1,37 +1,37 @@
 import React from 'react'
 // image
-import topImage from '../assets/pirometross.jpg';
+import topImage from '../assets/service.jpg';
 // motion
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 
 // img
-import pirometros from '../assets/pirometros.png';
-import reles from '../assets/reles.png';
-import timerAnalogico from '../assets/timerAnalogico.png';
-import timerDigital from '../assets/timerDigital.png';
-import semiswitch from '../assets/semiswitch.png';
+import disco from '../assets/disco.jpg';
+import llave3puntos from '../assets/llave3puntos.jpg';
+import llave7puntos from '../assets/llave7puntos.jpg';
+import timerDigital from '../assets/espagueti.jpg';
+import semiswitch from '../assets/termostatos.png';
 
 
 // rugby data
 const productos = [
   
     {
-      name: 'Pirometros',
+      name: 'Disco Cerámico',
       description:
-      'Relay/Contactor.',
-      cardimage: pirometros,
+      '1000w / 1500w.',
+      cardimage: disco,
     },{
-      name: 'Relay',
+      name: 'Llave',
       description:
-      '220v / 3/32.',
-      cardimage: reles,
+      'Anafe / Cocina.',
+      cardimage: llave3puntos,
     },{
-        name: 'Timer',
+        name: 'Llave',
         description:
-        'Analógico.',
-        cardimage: timerAnalogico,
+        'Horno / Cocina.',
+        cardimage: llave7puntos,
       },{
         name: 'Timer',
         description:

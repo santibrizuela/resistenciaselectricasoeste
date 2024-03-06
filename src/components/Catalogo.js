@@ -15,35 +15,25 @@ const catalogos = [
   
   {
     name: 'Resistencias',
-    description:
-    'Bremen.',
     cardimage: blindadas,
     link: '/resistencias',
   },{
     name: 'Controladores',
-    description:
-    'Bremen.',
     cardimage: pirometros,
     link: '/controladores',
   },
   {
     name: 'Sensores',
-    description:
-     'Rimo.',
     cardimage: campinis,
     link: '/sensores',
   },
   {
     name: 'Accesorios',
-    description:
-     'Bosch',
     cardimage: accesorios,
     link: '/accesorios',
   },
   {
     name: 'Servicio Técnico',
-    description:
-     'Bosch',
     cardimage: service,
     link: '/service',
   }

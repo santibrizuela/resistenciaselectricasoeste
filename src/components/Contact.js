@@ -3,7 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
-import { FaInstagram, FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { MdMailOutline } from "react-icons/md";
+
 
 const Contact = () => {
   return (
@@ -19,11 +21,7 @@ const Contact = () => {
             className='flex-1 flex items-center mx-auto text-center lg:text-start'
           >
             <div>
-              <h4 className='text-xl uppercase text-accent 
-              font-medium mb-2 tracking-wide hover:text-gradient'>
-                Trabajemos Juntos
-              </h4>
-              <h2 className='text-lime-200 font-bold text-[45px] lg:text-[90px] leading-none mb-2'>
+              <h2 className='text-accent font-bold text-[45px] lg:text-[90px] leading-none mb-2'>
                 Estemos en <br /> Contacto!
               </h2>
               
@@ -35,17 +33,20 @@ const Contact = () => {
                 viewport={{once: false, amount: 0.7}}
                 className='flex-1 flex text-[20px] gap-x-6 my-6 max-w-max mx-auto lg:mx-2'
               >
-                <a href='https://www.instagram.com/digitalizamostumarca/' target='_blank' rel='noreferrer'>
-                  <FaInstagram className='icon-color'/>
+                <a target='_blank' rel='noreferrer' href='https://wa.link/xfnhlw'>
+                    <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                        <FaWhatsapp/>
+                    </div>
                 </a>
-                <a href='https://github.com/santibrizuela' target='_blank' rel='noreferrer'>
-                  <FaGithub className='icon-color'/>
+                <a target='_blank' rel='noreferrer' href='https://www.instagram.com/ferreteriadivano/'>
+                    <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                        <FaInstagram/>
+                    </div>
                 </a>
-                <a href='https://ar.linkedin.com/company/brizuela-sideravicius' target='_blank' rel='noreferrer'>
-                  <FaLinkedin className='icon-color'/>
-                </a>
-                <a href='https://www.wa.link/xtdsov' target='_blank' rel='noreferrer'>
-                  <FaWhatsapp className='icon-color'/>
+                <a target='_blank' rel='noreferrer' href='mailto:resistenciaselectricasoeste@gmail.com'>
+                    <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                        <MdMailOutline/>
+                    </div>
                 </a>
               </motion.div>
             </div>
@@ -54,7 +55,7 @@ const Contact = () => {
           <div className='lg:w-[60%] scale-90 hover:scale-100 ease-in duration-300'>
           
             <motion.form 
-              action="https://formsubmit.co/brizuelasideravicius@gmail.com" method="POST" variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
+              action="https://formsubmit.co/resistenciaselectricasoeste@gmail.com" method="POST" variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
               className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-16 p-6 items-start'
             >
               

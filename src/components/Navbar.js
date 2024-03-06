@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import brandLogo from '../assets/logoV.png'
-import { FaInstagram, FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
+import brandLogo from '../assets/logoREOV.png'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { MdMailOutline } from 'react-icons/md';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -109,8 +110,8 @@ const Navbar = () => {
               </ul>
               <div className='pt-30'>
                 <p className='uppercase tracking-widest pt-10'>Contacto</p>
-                <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                    <a target='_blank' rel='noreferrer' href='https://www.wa.link/xtdsov'>
+                <div className='flex items-center justify-start my-4 w-full sm:w-[80%]'>
+                    <a target='_blank' rel='noreferrer' href='https://wa.link/xfnhlw'>
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
                             <FaWhatsapp/>
                         </div>
@@ -119,15 +120,10 @@ const Navbar = () => {
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
                             <FaInstagram/>
                         </div>
-                    </a>    
-                    <a target='_blank' rel='noreferrer' href='https://github.com/santibrizuela'>
-                        <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
-                            <FaGithub/>
-                        </div>
                     </a>
-                    <a target='_blank' rel='noreferrer' href='https://ar.linkedin.com/company/brizuela-sideravicius'>
+                    <a target='_blank' rel='noreferrer' href='mailto:resistenciaselectricasoeste@gmail.com'>
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
-                            <FaLinkedin/>
+                            <MdMailOutline/>
                         </div>
                     </a>
                 </div>

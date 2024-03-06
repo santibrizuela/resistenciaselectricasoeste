@@ -1,47 +1,47 @@
 import React from 'react'
 // image
-import topImage from '../assets/pirometross.jpg';
+import topImage from '../assets/borneras.jpg';
 // motion
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 
 // img
-import pirometros from '../assets/pirometros.png';
-import reles from '../assets/reles.png';
-import timerAnalogico from '../assets/timerAnalogico.png';
-import timerDigital from '../assets/timerDigital.png';
-import semiswitch from '../assets/semiswitch.png';
+import borneras from '../assets/borneras.jpg';
+import cables from '../assets/cables.jpg';
+import cintateflon from '../assets/cintateflon.png';
+import espagueti from '../assets/espagueti.jpg';
+import termostato from '../assets/termostatos.png';
 
 
 // rugby data
 const productos = [
   
     {
-      name: 'Pirometros',
+      name: 'Borneras',
       description:
-      'Relay/Contactor.',
-      cardimage: pirometros,
+      'Borneras / Fichas.',
+      cardimage: borneras,
     },{
-      name: 'Relay',
+      name: 'Cables',
       description:
-      '220v / 3/32.',
-      cardimage: reles,
+      'Cobre / Niquel.',
+      cardimage: cables,
     },{
-        name: 'Timer',
+        name: 'Teflón',
         description:
-        'Analógico.',
-        cardimage: timerAnalogico,
+        'Con y sin Adhesivo.',
+        cardimage: cintateflon,
       },{
-        name: 'Timer',
+        name: 'Espagueti',
         description:
-        'Digital.',
-        cardimage: timerDigital,
+        'Espagueti / Termocontraíble.',
+        cardimage: espagueti,
       },{
-        name: 'Semiswitch',
+        name: 'Termostato',
         description:
-        'EGO.',
-        cardimage: semiswitch,
+        '40° / 90° / 120° / 220° / 300°.',
+        cardimage: termostato,
       }
 
 ]

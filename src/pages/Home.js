@@ -3,15 +3,15 @@ import React from 'react'
 import About from '../components/About';
 import Services from '../components/Services';
 import Banner from '../components/Banner';
-import Work from '../components/Catalogo';
+import Catalogo from '../components/Catalogo';
 
 const Home = () => {
   return (
     <>
         <Banner/>
         <About/>
+        <Catalogo/>
         <Services/>
-        <Work/>
     </>
   )
 }

@@ -23,11 +23,11 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0a0a0a',
-        accent: '#C70039',
+        accent: '#10B981',
       },
       backgroundImage: {
-        site: "url('./assets/resistencias.jpg')",
-        about: "url('./assets/logoMR.png')",
+        site: "url('./assets/site-bg.png')",
+        about: "url('./assets/logoREO.png')",
       },
     },
   },
