@@ -14,6 +14,7 @@ import Accesorios from './pages/Accesorios';
 import Resistencias from './pages/Resistencias';
 import Sensores from './pages/Sensores';
 import Controladores from './pages/Controladores';
+import Ascensores from './pages/Ascensores';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/resistencias' element={<Resistencias/>} />
         <Route path='/Sensores' element={<Sensores/>} />
         <Route path='/Controladores' element={<Controladores/>} />
+        <Route path='/Ascensores' element={<Ascensores/>} />
       </Routes>
       <Contact />
       <Footer />

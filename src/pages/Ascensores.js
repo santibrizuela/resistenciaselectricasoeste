@@ -1,52 +1,58 @@
 import React from 'react'
 // image
-import topImage from '../assets/service.jpg';
+import topImage from '../assets/blindadaelevadores.png';
 // motion
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 
 // img
-import disco from '../assets/disco.jpg';
-import llave3puntos from '../assets/llave3puntos.jpg';
-import llave7puntos from '../assets/llave7puntos.jpg';
+import blindadaelevadores from '../assets/blindadaelevadores.png';
+import cables from '../assets/cables.jpg';
 import espagueti from '../assets/espagueti.jpg';
-import semiswitch from '../assets/termostatos.png';
+import termostato from '../assets/termostatos.png';
+import ttcaja from '../assets/ttcaja.jpg';
+import resistenciafrenado from '../assets/resistenciafrenado.jpg';
 
 
 // rugby data
 const productos = [
   
     {
-      name: 'Disco Cerámico',
+      name: 'Blindada D1350',
       description:
-      '1000w / 1500w.',
-      cardimage: disco,
+      '600w 220v.',
+      cardimage: blindadaelevadores,
     },{
-      name: 'Llave',
-      description:
-      'Anafe / Cocina.',
-      cardimage: llave3puntos,
-    },{
-        name: 'Llave',
+        name: 'Termostato en Caja',
         description:
-        'Horno / Cocina.',
-        cardimage: llave7puntos,
+        '40° / 90° / 120° / 220° / 300°.',
+        cardimage: ttcaja,
       },{
+        name: 'Resistencia de Frenado',
+        description:
+        'Variadores.',
+        cardimage: resistenciafrenado,
+      },{
+        name: 'Termostato',
+        description:
+        '40° / 90° / 120° / 220° / 300°.',
+        cardimage: termostato,
+      },{
+      name: 'Cables',
+      description:
+      'Cobre / Niquel.',
+      cardimage: cables,
+    },{
         name: 'Espagueti',
         description:
         'Espagueti / Termocontraíble.',
         cardimage: espagueti,
-      },{
-        name: 'Semiswitch',
-        description:
-        'EGO.',
-        cardimage: semiswitch,
       }
 
 ]
 
-const Controladores = () => {
+const Elevadores = () => {
     return (
         <>
     
@@ -63,7 +69,7 @@ const Controladores = () => {
                 <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
                 <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
                 <div className='absolute top-[18%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>SERVICIO TECNICO</h2>
+                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>ASCENSORES</h2>
                     
                 </div>
             </motion.div>
@@ -121,4 +127,4 @@ const Controladores = () => {
       )
 }
 
-export default Controladores
+export default Elevadores

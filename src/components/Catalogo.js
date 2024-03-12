@@ -9,7 +9,8 @@ import blindadas from '../assets/blindadas.png';
 import campinis from '../assets/campinis.png';
 import service from '../assets/service.jpg';
 import accesorios from '../assets/accesorios.jpg';
-// services data
+import ascensores from '../assets/ttcaja.jpg';
+// catalogo data
 const catalogos = [
   
   
@@ -36,6 +37,11 @@ const catalogos = [
     name: 'Servicio Técnico',
     cardimage: service,
     link: '/service',
+  },
+  {
+    name: 'Ascensores',
+    cardimage: ascensores,
+    link: '/ascensores',
   }
   
 ]
