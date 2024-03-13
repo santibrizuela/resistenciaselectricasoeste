@@ -15,6 +15,7 @@ import Resistencias from './pages/Resistencias';
 import Sensores from './pages/Sensores';
 import Controladores from './pages/Controladores';
 import Ascensores from './pages/Ascensores';
+import Hornos from './pages/Hornos';
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='/Sensores' element={<Sensores/>} />
         <Route path='/Controladores' element={<Controladores/>} />
         <Route path='/Ascensores' element={<Ascensores/>} />
+        <Route path='/Hornos' element={<Hornos/>} />
       </Routes>
       <Contact />
       <Footer />
