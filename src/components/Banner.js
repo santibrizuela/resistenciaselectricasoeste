@@ -73,7 +73,7 @@ const Banner = () => {
              className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
           >
             <a
-              href="https://wa.link/k6wmgp"
+              href="https://wa.link/vpajrr"
               target="_blank"
               rel="noopener noreferrer"
             >
