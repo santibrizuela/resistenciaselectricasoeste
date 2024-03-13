@@ -107,7 +107,7 @@ const Controladores = () => {
                             {/* button */}
                             <div className='absolute bottom-full left-12 
                             group-hover:bottom-2 transition-all duration-700 z-40'>
-                                <a href='https://wa.link/xfnhlw' target='_blank' rel="noreferrer">
+                                <a href='https://wa.link/0w1lhd' target='_blank' rel="noreferrer">
                                     <button className='btn btn-sm'>Contactanos</button>
                                 </a>
                             </div>

@@ -33,7 +33,7 @@ const Contact = () => {
                 viewport={{once: false, amount: 0.7}}
                 className='flex-1 flex text-[20px] gap-x-6 my-6 max-w-max mx-auto lg:mx-2'
               >
-                <a target='_blank' rel='noreferrer' href='https://wa.link/xfnhlw'>
+                <a target='_blank' rel='noreferrer' href='https://wa.link/0w1lhd'>
                     <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
                         <FaWhatsapp/>
                     </div>
