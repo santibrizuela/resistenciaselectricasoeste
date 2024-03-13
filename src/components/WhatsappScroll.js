@@ -37,7 +37,7 @@ const WhatsappScroll = () => {
       }`}
     >
       <a
-        href="https://wa.link/0w1lhd"
+        href="https://wa.link/vpajrr"
         target="_blank"
         rel="noopener noreferrer"
     >

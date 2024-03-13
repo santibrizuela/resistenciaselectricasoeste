@@ -87,7 +87,7 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center justify-center lg:justify-start'>
-              <a href='https://wa.link/0w1lhd'>
+              <a href='https://wa.link/vpajrr'>
                   <button className='btn btn-lg btn-outline'>
                       Contactanos
                   </button>              
