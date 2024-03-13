@@ -10,6 +10,8 @@ import campinis from '../assets/campinis.png';
 import service from '../assets/service.jpg';
 import accesorios from '../assets/accesorios.jpg';
 import ascensores from '../assets/ttcaja.jpg';
+import hornos from '../assets/parrillahorno.jpg';
+import bebederos from '../assets/bacope2gujeros.jpg';
 // catalogo data
 const catalogos = [
   
@@ -42,13 +44,23 @@ const catalogos = [
     name: 'Ascensores',
     cardimage: ascensores,
     link: '/ascensores',
+  },
+  {
+    name: 'Hornos',
+    cardimage: hornos,
+    link: '/hornos',
+  },
+  {
+    name: 'Bebederos',
+    cardimage: bebederos,
+    link: '/bebederos',
   }
   
 ]
 
 const Work = () => {
   return (
-  <section className='section' id='work'>
+  <section className='my-2' id='work'>
     <div className='container mx-auto'>
       <div className='grid lg:flex-row gap-x-10'>
         <motion.div 

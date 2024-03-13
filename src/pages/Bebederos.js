@@ -1,110 +1,57 @@
 import React from 'react'
 // image
-import topImage from '../assets/campinis.png';
+import topImage from '../assets/bacope2gujeros.jpg';
 // motion
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 
 // img
-import termostatos from '../assets/termostatos.png';
-import blindadahornito430 from '../assets/blindadahornito430.png';
+import bacope from '../assets/bacope115x65.png';
+import bacope2 from '../assets/bacope2gujeros.jpg';
+import usuhaia from '../assets/usuhaia125x65.png';
 import campinis from '../assets/campinis.png';
-import blindadahornoinf from '../assets/blindadahornoinf.png';
-import blindadahornosup from '../assets/blindadahornosup.png';
-import blindadahornopauna from '../assets/blindadahornopauna.png';
-import llave7puntos from '../assets/llave7puntos.jpg';
-import ttplancha from '../assets/ttPlancha.jpg';
-import lampara from '../assets/lampara.jpg';
-import perilla from '../assets/perilla.jpg';
-import reductor from '../assets/reductor.jpg';
-import presnacable from '../assets/presnacable.jpg';
+import caldera from '../assets/caldera.png';
 
 
-// hornos data
+// bebederos data
 const productos = [
   
     {
-      name: 'Blindada Inferior',
+      name: 'Bacope',
       description:
-      'Resistencia Inferior Horno.',
-      cardimage: blindadahornoinf,
-    },
-    {
-      name: 'Blindada Superior',
+      'Suncho Bacope Ø115x65mm.',
+      cardimage: bacope,
+    },{
+      name: 'Bacope 2',
       description:
-      'Resistencia Superior Horno.',
-      cardimage: blindadahornosup,
-    },
-    {
-        name: 'Blindada Pauna',
+      'Suncho con 2 agujeros.',
+      cardimage: bacope2,
+    },{
+        name: 'Usuhaia',
         description:
-        'Resistencia Horno Pauna.',
-        cardimage: blindadahornopauna,
-      },
-    {
-      name: 'Llave de Horno',
-      description:
-      'Llave 6 posiciones.',
-      cardimage: llave7puntos,
-    },
-    {
-        name: 'Termostato',
-        description:
-        'Horno / Plancha.',
-        cardimage: ttplancha,
-    },
-    {
-        name: 'Lámpara',
-        description:
-        'Lámpara Horno.',
-        cardimage: lampara,
-    },
-    {
-        name: 'Perilla',
-        description:
-        'Horno / Plancha.',
-        cardimage: perilla,
-    },
-    {
-        name: 'Reductor',
-        description:
-        'Horno / Plancha.',
-        cardimage: reductor,
-    },
-    {
-        name: 'Prensacable',
-        description:
-        'Horno / Plancha.',
-        cardimage: presnacable,
-    },
-    {
-        name: 'TT Mecánico',
-        description:
-        '40° / 90° / 120° / 220° / 300°.',
-        cardimage: termostatos,
-    },
-    {
-        name: 'Rectas Horno',
-        description:
-        'Blindadas rectas.',
-        cardimage: blindadahornito430,
-    },
-    {
+        'Suncho Usuhaia Ø125x65mm.',
+        cardimage: usuhaia,
+      },{
         name: 'Campinis',
         description:
         'Bebedero / Horno.',
         cardimage: campinis,
-    },
+      },{
+        name: 'Caldera',
+        description:
+        'Calderas para Bebederos.',
+        cardimage: caldera,
+      }
 
 ]
 
-const Hornos = () => {
-  return (
-    <>
-
-
-        <div className='w-full pb-36'>
+const Bebederos = () => {
+    return (
+        <>
+    
+    
+    <div className='w-full pb-36'>
             <motion.div 
                 
                 variants={fadeIn('down', 0.2)}
@@ -116,7 +63,7 @@ const Hornos = () => {
                 <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
                 <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
                 <div className='absolute top-[18%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>HORNOS</h2>
+                    <h2 className='py-2 font-bold text-gradient text-[2.6rem]'>BEBEDEROS</h2>
                     
                 </div>
             </motion.div>
@@ -169,11 +116,9 @@ const Hornos = () => {
                 );
                 })}
             </div>
-
-            
         </div>
-    </>
-  )
+        </>
+      )
 }
 
-export default Hornos
+export default Bebederos

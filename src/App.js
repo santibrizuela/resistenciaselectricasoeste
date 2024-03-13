@@ -16,6 +16,7 @@ import Sensores from './pages/Sensores';
 import Controladores from './pages/Controladores';
 import Ascensores from './pages/Ascensores';
 import Hornos from './pages/Hornos';
+import Bebederos from './pages/Bebederos';
 
 const App = () => {
   return (
@@ -31,10 +32,11 @@ const App = () => {
         <Route path='/service' element={<Service/>} />
         <Route path='/accesorios' element={<Accesorios/>} />
         <Route path='/resistencias' element={<Resistencias/>} />
-        <Route path='/Sensores' element={<Sensores/>} />
-        <Route path='/Controladores' element={<Controladores/>} />
-        <Route path='/Ascensores' element={<Ascensores/>} />
-        <Route path='/Hornos' element={<Hornos/>} />
+        <Route path='/sensores' element={<Sensores/>} />
+        <Route path='/controladores' element={<Controladores/>} />
+        <Route path='/ascensores' element={<Ascensores/>} />
+        <Route path='/hornos' element={<Hornos/>} />
+        <Route path='/bebederos' element={<Bebederos/>} />
       </Routes>
       <Contact />
       <Footer />

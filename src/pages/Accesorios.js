@@ -14,7 +14,7 @@ import espagueti from '../assets/espagueti.jpg';
 import termostato from '../assets/termostatos.png';
 
 
-// rugby data
+// accesorios data
 const productos = [
   
     {
